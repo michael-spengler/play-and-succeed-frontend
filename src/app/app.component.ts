@@ -10,13 +10,17 @@ export class AppComponent {
   public title = 'play-and-succeed-frontend';
 
   public navBarData: INavbarData;
-  public view = 'landing';
+  public view = '/landing';
 
   public constructor() {
     this.navBarData = this.getNavBarData();
   }
 
   public onClickMenuEntry(target: string) {
+    if (target === '/landing') {
+      window.location.reload();
+    }
+
     this.view = target;
   }
 
@@ -28,7 +32,7 @@ export class AppComponent {
       menuEntries: [{
         isActive: true,
         text: 'Home',
-        href: '/home',
+        href: '/landing',
       },
       {
         isActive: false,
