@@ -15,7 +15,7 @@ export class ContactComponent implements OnInit {
     extension: '',
     zipCode: '69115',
     city: 'Heidelberg',
-    phoneNumber: '0049 151 67 83 38 69',
+    phoneNumber: '+49 151 67 83 38 69',
     eMail: 'michael@spengler.biz',
     textAlign: 'center',
     bgColor: 'inherit',
