@@ -27,8 +27,8 @@ export class AppComponent {
   private getNavBarData(): INavbarData {
     return {
       // replace the following by your data...
-      logoURL: 'https://fance-stiftung.de/api/app/app-images/logo.png',
-      appTitle: 'App Title',
+      logoURL: 'http://play-and-succeed.de/getAsset/logo',
+      appTitle: 'Play And Succeed',
       menuEntries: [{
         isActive: true,
         text: 'Home',
